@@ -1,26 +1,25 @@
-# 단변량 분석
+# 단변량 - 수치형
 ---
-## 수치형
-### 대푯값
-**1. 평균**
+## 수치화
+### 평균
 - mean()
 ```
 diabetes['BMI'].mean()
 ```
 
-**2. 중앙값**
+### 중앙값
 - median()
 ```
 diabetes['BMI'].median()
 ```
 
-**3. 최빈값**
+### 최빈값
 - mode()
 ```
 diabetes['BMIStatus'].mode()
 ```
 
-**4. 사분위수**
+### 사분위수
 - Describe()
 ```
 diabetes['BMI'].describe()
@@ -31,8 +30,8 @@ print('Q1:', diabetes['BMI'].describe()['25%'])
 print('Q2:', diabetes['BMI'].describe()['50%'])
 print('Q3:', diabetes['BMI'].describe()['75%'])
 ```
----
-## 기술통계 정보
+
+### 기술통계 정보
 **describe().T : 가로 세로 방향 바꾸어서 보여줌**
 
 ---

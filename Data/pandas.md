@@ -37,8 +37,8 @@
 
 ---
 ## 데이터프레임 변경
-- rename : 열 이름 변경
-- df['final_amt'] = df['total_bill'] + df['tip'] : 열 추가(뒤에)
+- 열 이름 변경 : rename()
+- 열 추가 : df['final_amt'] = df['total_bill'] + df['tip'] : 열 추가(뒤에)
 - insert(index, cloumns) : 인덱스에 열 추 
 - drop : 열 삭제
 - tip['sex'] = tip['sex'].map({'Male': 1, 'Female': 0}) : 범줏값 변경(매칭 안되면 nan)

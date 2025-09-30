@@ -9,11 +9,22 @@ temp = diabetes['BMIStatus'].value_counts()
 plt.bar(x=temp.index.astype(str), height=temp.values)
 plt.show()
 ```
--sns 방법
+- sns 방법
+    - 데이터 처리가 필요함
 ```
 sns.countplot(x='BMIStatus', data=diabetes)
 plt.show()
 ```
+### box plot
+**형태**
+- 최솟값
+- 최댓값
+- 25퍼
+- 50퍼
+- 75퍼
+- iqr : 75 - 25 차이
+- 이상치 : iqr * 1.5를 넘어가는 비정상적?으로 추정되는 값
+
 ---
 ### Pie Chart
 - plt 방법
